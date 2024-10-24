@@ -1,0 +1,33 @@
+{
+	"menuCtrls": {
+		"left": [
+			{
+				"label": "Foundation & Missions",
+				"src": "/home"
+			},
+			{
+				"label": "Academic Divisions",
+				"src": "/home"
+			},
+			{
+				"label": "Courses & Programmes",
+				"src": "/home"
+			}
+		],
+		"right": [
+			{
+				"label": "Student Testimonials",
+				"src": "/home"
+			},
+
+			{
+				"label": "Payments Portal",
+				"src": "/home"
+			},
+			{
+				"label": "Resource Center",
+				"src": "/home"
+			}
+		]
+	}
+}

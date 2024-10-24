@@ -1,0 +1,30 @@
+.wrapper {
+	display: grid;
+	grid-template-columns: 1fr 3fr 1fr;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 1.6px solid #ebebeb;
+	padding-left: 32px;
+	padding-right: 32px;
+}
+
+.colliders {
+	display: grid;
+	grid-auto-flow: column;
+	grid-gap: 32px;
+	align-items: center;
+}
+
+.brand {
+	/* background-color: blue; */
+	cursor: pointer;
+	justify-self: center;
+}
+
+.ctrls {
+	/* background-color: orange; */
+	display: grid;
+	grid-auto-flow: column;
+	grid-gap: 32px;
+	justify-self: right;
+}

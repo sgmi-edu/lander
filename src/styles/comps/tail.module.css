@@ -1,0 +1,8 @@
+.wrapper {
+	background-color: rgb(244, 244, 244);
+	display: grid;
+	align-items: center;
+	justify-content: space-between;
+	padding: 16px 32px;
+	border-top: 1.6px solid #ebebeb;
+}

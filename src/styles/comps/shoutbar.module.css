@@ -1,0 +1,12 @@
+.wrapper {
+	background-color: rgb(244, 244, 244);
+	display: grid;
+	align-items: center;
+	justify-content: space-between;
+	padding: 16px 32px;
+	border-bottom: 1.6px solid #ebebeb;
+}
+
+.wrapper > p {
+	color: rgb(156, 156, 156);
+}

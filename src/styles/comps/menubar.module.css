@@ -1,0 +1,22 @@
+.wrapper {
+	display: grid;
+	grid-auto-flow: column;
+	align-items: center;
+	justify-content: space-between;
+	padding: 16px 32px;
+	border-bottom: 1.6px solid #ebebeb;
+	padding-left: 32px;
+	padding-right: 32px;
+}
+
+.itemWrapper {
+	display: grid;
+	grid-auto-flow: column;
+}
+
+.icon {
+	display: grid;
+	grid-auto-flow: column;
+	justify-content: center;
+	align-items: center;
+}
