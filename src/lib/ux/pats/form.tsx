@@ -1,5 +1,5 @@
-import { Button, Input } from '@/comps'
-import { formStyles } from '@/styles/pats'
+import { Button, Input } from '@/lib/ux/comps'
+import { formStyles } from '@/lib/ux/styles/pats'
 
 type Form = {
 	variant: string

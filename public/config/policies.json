@@ -1,0 +1,79 @@
+{
+	"title": "Privacy Policies",
+	"policies": [
+		{
+			"label": "Common Terms",
+			"brief": "When you take an admission in SGMI garages, you must agree to thefollowing terms:",
+			"policies": [
+				{
+					"policy_name": "Payment Receipts : ",
+					"policy_term": "Collect the payment receipt at the time of joining and keep it available till the end of the course"
+				},
+				{
+					"policy_name": "No Job Placement Guarantees:",
+					"policy_term": "This course is designed to enhance your skills for job readiness, butthere is no assurance of employment placement."
+				},
+				{
+					"policy_name": "Personal Belongings: ",
+					"policy_term": "Administration is not liable for any loss of students' belongings. Students have to take care of their personal belongings."
+				},
+				{
+					"policy_name": "Policy Awareness:",
+					"policy_term": "We display common terms & policies in every premises, we expect students to read the same before enrolling."
+				}
+			]
+		},
+		{
+			"label": "Refund Policy",
+			"brief": "Once a student enrolls for a course and takes all the coursework and accomplished them as suggested for 30 days, if s/he is not satisfied and likes to discontinue, s/he may request a refund within the 7 days from joining.",
+			"policies": [
+				{
+					"policy_name": "No-Questions-Asked Refund : ",
+					"policy_term": "We will provide him/her a no-questions-asked refund if it is claimed within 7 days from the date of joining."
+				},
+				{
+					"policy_name": "Refund Processing Time:",
+					"policy_term": " It may take a maximum of 20 days to refund the money to the source from which it was paid. However, we try to refund within 14 days after a valid request is made."
+				},
+				{
+					"policy_name": "Future Enrolment: ",
+					"policy_term": "We reserve the right to deny future enrollment to the individuals who have previously requested a refund."
+				},
+				{
+					"policy_name": "Non-Refundable Cases:",
+					"policy_term": "Incase of any disobedient activities, lack of attendance and Uninformed cancellation of course by students, the money will not be refunded."
+				},
+				{
+					"policy_name": "Emergency Refunds:",
+					"policy_term": "In case of emergency, if a student is unable to continue the course, then his/her 50% money will be refunded excluding GST."
+				}
+			]
+		},
+		{
+			"label": "Specific Terms for Tech Courses",
+			"brief": "These are some specific terms followed while providing a course:",
+			"policies": [
+				{
+					"policy_name": "Course Content : ",
+					"policy_term": "The course curriculum will cover specific technical skills and knowledge relevant to the chosen field."
+				},
+				{
+					"policy_name": "Equipment and Resources::",
+					"policy_term": "Students may have access to necessary equipment, software and resources for practical learning."
+				},
+				{
+					"policy_name": "Instructor Support: ",
+					"policy_term": "Experienced instructors will provide guidance, support, and mentorship throughout the course."
+				},
+				{
+					"policy_name": "Project and Assignments:",
+					"policy_term": "Students will be required to complete practical projects and assignments to apply their learning."
+				},
+				{
+					"policy_name": "Certification or Accreditation:",
+					"policy_term": "Upon successful completion, students may receive a certificate or accreditation recognized by relevant industry standards."
+				}
+			]
+		}
+	]
+}

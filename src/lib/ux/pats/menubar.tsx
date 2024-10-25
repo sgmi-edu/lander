@@ -1,6 +1,6 @@
 'use client'
 
-import { menubarStyles } from '@/styles'
+import { menubarStyles } from '@/lib/ux/styles'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -12,10 +12,18 @@ type Menubar = {
 		left: {
 			label: string
 			src: string
+			items: {
+				title: string
+				brief: string
+			}[]
 		}[]
 		right: {
 			label: string
 			src: string
+			items: {
+				title: string
+				brief: string
+			}[]
 		}[]
 	}
 }
@@ -28,6 +36,10 @@ const Menubar = (props: Menubar) => {
 			{props.ctrls.left.map(
 				(
 					ctrl: {
+						items: {
+							title: string
+							brief: string
+						}[]
 						label: string
 						src: string
 					},
@@ -47,8 +59,22 @@ const Menubar = (props: Menubar) => {
 								/>
 							</span>
 							<div className={menubarStyles.content}>
-								<p>Content One</p>
-								<p>Content Two</p>
+								{ctrl.items.map(
+									(
+										c: {
+											title: string
+											brief: string
+										},
+										i: number
+									) => {
+										return (
+											<div className={menubarStyles.card} key={i}>
+												<h2>{c.title}</h2>
+												<p style={{ textAlign: 'justify' }}>{c.brief}</p>
+											</div>
+										)
+									}
+								)}
 							</div>
 						</div>
 					)

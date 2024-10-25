@@ -1,5 +1,5 @@
-import { Button } from '@/comps'
-import { heroStyles } from '@/styles/lays'
+import { Button } from '@/lib/ux/comps'
+import { heroStyles } from '@/lib/ux/styles/lays'
 import Link from 'next/link'
 
 const Hero = () => {

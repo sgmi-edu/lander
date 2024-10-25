@@ -1,4 +1,4 @@
-import { shoutbarStyles } from '@/styles'
+import { shoutbarStyles } from '@/lib/ux/styles'
 
 const Shoutbar = () => {
 	return (

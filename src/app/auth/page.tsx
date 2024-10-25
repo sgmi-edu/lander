@@ -1,4 +1,4 @@
-import { Form } from '@/pats'
+import { Form } from '@/lib/ux/pats'
 
 const Auth = () => {
 	return <Form variant='LOGIN' />

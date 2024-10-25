@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { Plus_Jakarta_Sans, Libre_Baskerville } from 'next/font/google'
 
 import React from 'react'
-import { Head, Tail, Menubar } from '../pats'
+import { Head, Tail, Menubar } from '@/lib/ux/pats'
 import Settings from '../../public/config/settings.json'
 import './globals.css'
 

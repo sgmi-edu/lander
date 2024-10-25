@@ -26,14 +26,22 @@
 
 .content {
 	display: none;
-	background-color: #fb5656;
+	background-color: #ededed;
 	z-index: 1;
 	position: absolute;
 	left: 0;
 	right: 0;
 	width: 100vw;
-	height: auto;
+	height: 100vh;
+	padding: 24px;
 }
 .dropdown:hover .content {
-	display: block;
+	display: grid;
+	gap: 32px;
+}
+
+.card {
+	background-color: white;
+	display: grid;
+	padding: 16px;
 }

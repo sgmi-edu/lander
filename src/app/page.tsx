@@ -1,4 +1,4 @@
-import { Hero } from '@/lays'
+import { Hero } from '@/lib/ux/lays'
 import React from 'react'
 
 export default function Home() {

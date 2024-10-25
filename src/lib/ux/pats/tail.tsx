@@ -1,11 +1,11 @@
-import { tailStyles } from '@/styles'
+import { tailStyles } from '@/lib/ux/styles'
 import Link from 'next/link'
 
 const Tail = () => {
 	const ctrls = (
 		<ul className={tailStyles.ctrlBlock}>
 			<Link href='/policies'>Privacy Policy</Link>
-			<Link href='/t&c'>Terms & Conditions</Link>
+			<Link href='/terms'>Terms & Conditions</Link>
 			<Link href='/support'>Support Center</Link>
 		</ul>
 	)

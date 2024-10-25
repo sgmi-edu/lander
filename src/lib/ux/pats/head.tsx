@@ -1,4 +1,4 @@
-import { headStyles } from '@/styles'
+import { headStyles } from '@/lib/ux/styles'
 import Image from 'next/image'
 import Link from 'next/link'
 

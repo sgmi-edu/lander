@@ -1,4 +1,4 @@
-import { inputStyles } from '@/styles'
+import { inputStyles } from '@/lib/ux/styles'
 
 type Input = {
 	type: string
