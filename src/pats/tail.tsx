@@ -3,18 +3,18 @@ import Link from 'next/link'
 
 const Tail = () => {
 	const ctrls = (
-		<ul>
-			<Link href='/Privay Policies'>Policies</Link>
-			<Link href='/Terms & Conditions'>Policies</Link>
-			<Link href='/Honorcodes'>Honorcodes</Link>
+		<ul className={tailStyles.ctrlBlock}>
+			<Link href='/policies'>Privacy Policy</Link>
+			<Link href='/t&c'>Terms & Conditions</Link>
+			<Link href='/support'>Support Center</Link>
 		</ul>
 	)
 	return (
 		<div className={tailStyles.wrapper}>
 			{ctrls}
 			<p className={tailStyles.copyright}>
-				Copyright © All Rights Reserved | Sarvaloka Global Mission Institute ® |
-				SGMI
+				Copyright © All Rights Reserved <br /> Sarvaloka Global Mission
+				Institute ® | SGMI
 			</p>
 		</div>
 	)
