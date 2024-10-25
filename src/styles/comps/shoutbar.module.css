@@ -3,10 +3,12 @@
 	display: grid;
 	align-items: center;
 	justify-content: space-between;
-	padding: 16px 32px;
+	padding: 24px;
 	border-bottom: 1.6px solid #ebebeb;
 }
 
 .wrapper > p {
 	color: rgb(156, 156, 156);
+	font-size: 86%;
+	text-align: justify;
 }

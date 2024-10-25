@@ -4,8 +4,9 @@
 	align-items: center;
 	justify-content: space-between;
 	border-bottom: 1.6px solid #ebebeb;
-	padding-left: 32px;
-	padding-right: 32px;
+	padding-left: 24px;
+	padding-right: 24px;
+	padding-bottom: 8px;
 }
 
 .colliders {
@@ -27,4 +28,11 @@
 	grid-auto-flow: column;
 	grid-gap: 32px;
 	justify-self: right;
+}
+
+.access {
+	display: grid;
+	grid-auto-flow: column;
+	align-items: center;
+	grid-gap: 4px;
 }

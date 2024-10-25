@@ -1,0 +1,35 @@
+.wrapper {
+	display: grid;
+	grid-template-rows: auto;
+	height: 80vh;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding: 24px;
+
+	background-image: url('/assets/bg.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.wrapper::before {
+	filter: blur(80px);
+	-webkit-filter: blur(80px);
+	position: absolute;
+	z-index: -1;
+}
+
+.wrapper :hover::before {
+	filter: blur(80px);
+	-webkit-filter: blur(80px);
+	position: absolute;
+	z-index: -1;
+}
+
+.wrapper > span > h1 {
+	color: blue;
+}
+
+.wrapper > span > a {
+	color: blue;
+}

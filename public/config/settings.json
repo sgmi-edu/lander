@@ -2,15 +2,15 @@
 	"menuCtrls": {
 		"left": [
 			{
-				"label": "Foundation & Missions",
+				"label": "Foundation",
 				"src": "/home"
 			},
 			{
-				"label": "Academic Divisions",
+				"label": "Divisions",
 				"src": "/home"
 			},
 			{
-				"label": "Courses & Programmes",
+				"label": "Programmes",
 				"src": "/home"
 			}
 		],
@@ -25,7 +25,7 @@
 				"src": "/home"
 			},
 			{
-				"label": "Resource Center",
+				"label": "Resources",
 				"src": "/home"
 			}
 		]

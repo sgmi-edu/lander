@@ -1,0 +1,7 @@
+.wrapper {
+	display: grid;
+	grid-template-rows: auto;
+	justify-content: center;
+	padding: 120px;
+	grid-gap: 12px;
+}

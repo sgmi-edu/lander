@@ -3,10 +3,8 @@
 	grid-auto-flow: column;
 	align-items: center;
 	justify-content: space-between;
-	padding: 16px 32px;
+	padding: 0px 16px;
 	border-bottom: 1.6px solid #ebebeb;
-	padding-left: 32px;
-	padding-right: 32px;
 }
 
 .itemWrapper {
@@ -19,4 +17,23 @@
 	grid-auto-flow: column;
 	justify-content: center;
 	align-items: center;
+	color: white;
+	padding: 8px 16px;
+	background-color: inherit;
+	font-family: inherit; /* Important for vertical align on mobile phones */
+	cursor: pointer;
+}
+
+.content {
+	display: none;
+	background-color: #fb5656;
+	z-index: 1;
+	position: absolute;
+	left: 0;
+	right: 0;
+	width: 100vw;
+	height: auto;
+}
+.dropdown:hover .content {
+	display: block;
 }
