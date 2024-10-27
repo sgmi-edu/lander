@@ -20,7 +20,8 @@
 	color: white;
 	padding: 8px 16px;
 	background-color: inherit;
-	font-family: inherit; /* Important for vertical align on mobile phones */
+	font-family: inherit;
+	/* Important for vertical align on mobile phones */
 	cursor: pointer;
 }
 
@@ -32,16 +33,29 @@
 	left: 0;
 	right: 0;
 	width: 100vw;
-	height: 100vh;
 	padding: 24px;
+	align-items: flex-start;
+	max-height: 60vh;
 }
+
 .dropdown:hover .content {
 	display: grid;
-	gap: 32px;
+	gap: 16px;
 }
 
 .card {
 	background-color: white;
 	display: grid;
 	padding: 16px;
+	align-self: flex-start;
+
+}
+
+@media only screen and (min-width: 1920px) {
+	.content {
+		max-width: 1280px;
+		justify-self: center;
+	}
+
+
 }
