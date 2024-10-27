@@ -60,10 +60,6 @@ main {
 	letter-spacing: -0.4px;
 }
 button {
-	padding-left: 17px;
-	padding-right: 24px;
-	padding-top: 12px;
-	padding-bottom: 12px;
 	white-space: nowrap;
 	outline: none;
 	border: none;
@@ -71,6 +67,7 @@ button {
 	color: rgb(67, 67, 67);
 	border-radius: 2px;
 	height: 42px;
+	padding: 8px 32px;
 }
 
 input {

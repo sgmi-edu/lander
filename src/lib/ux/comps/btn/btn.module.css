@@ -1,0 +1,20 @@
+.PRIMARY {
+	background-color: #002dcc;
+	color: white;
+	display: flex;
+	gap: 8px;
+	justify-content: center;
+	align-items: center;
+}
+
+.TRIGGER {
+	background-color: #02d255;
+	color: white;
+	display: flex;
+	gap: 8px;
+	justify-content: center;
+	align-items: center;
+}
+
+.SECONDARY {
+}

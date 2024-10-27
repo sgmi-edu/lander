@@ -1,0 +1,10 @@
+{
+  "xfc pg": {
+    "scope": "xfc pg",
+    "prefix": "xfc pg",
+    "body": [
+      "const Page = () => {\r\n\treturn <div></div>\r\n}\r\n\r\nexport default Page\r\n"
+    ],
+    "description": "xfc pg"
+  }
+}
