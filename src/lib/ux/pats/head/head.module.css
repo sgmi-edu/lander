@@ -36,3 +36,22 @@
 	align-items: center;
 	grid-gap: 4px;
 }
+
+.wrapper input {
+	display: none;
+}
+
+.wrapper button {
+	display: none;
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 480px) {
+	.wrapper input {
+		display: grid;
+	}
+
+	.wrapper button {
+		display: flex;
+	}
+}

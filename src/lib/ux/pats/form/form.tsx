@@ -1,6 +1,7 @@
 import Comp from '@/lib/ux/comps'
 import styles from './form.module.css'
 
+
 type Form = {
 	variant: string
 }
@@ -8,9 +9,9 @@ type Form = {
 const Form = (props: Form) => {
 	const LoginForm = (
 		<form className={styles.wrapper}>
-			<span>
+			<span style={{ margin: '24px 0px 12px 0px' }}>
 				<h2>Integrated Students Portal for Managing Everything</h2>
-				<p>
+				<p style={{ margin: '12px 0px 0px 0px' }}>
 					Access exclusive contents and educate yourself from the few clicks
 					online. Claim access now
 				</p>

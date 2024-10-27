@@ -1,6 +1,5 @@
 import styles from './tail.module.css'
 import Link from 'next/link'
-import { Fragment } from 'react'
 
 const Tail = () => {
 	const quicklinks = (
@@ -19,17 +18,14 @@ const Tail = () => {
 		</ul>
 	)
 	return (
-		<Fragment>
-			<div className={styles.wrapper}>
-				{quicklinks}
-
-				{ctrls}
-				<p className={styles.copyright}>
-					Copyright © All Rights Reserved <br /> Sarvaloka Global Mission
-					Institute ® | SGMI
-				</p>
-			</div>
-		</Fragment>
+		<div className={styles.wrapper}>
+			{quicklinks}
+			{ctrls}
+			<p className={styles.copyright}>
+				Copyright © All Rights Reserved Sarvaloka Global Mission
+				Institute ® | SGMI
+			</p>
+		</div>
 	)
 }
 

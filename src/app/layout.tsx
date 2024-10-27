@@ -1,10 +1,12 @@
+
 import type { Metadata } from 'next'
 import { Plus_Jakarta_Sans, Libre_Baskerville } from 'next/font/google'
 
 import React from 'react'
-import { Head, Tail, Menubar } from '@/lib/ux/pats'
-import Settings from '../../public/config/settings.json'
+
 import './globals.css'
+
+import App from './app'
 
 export const metadata: Metadata = {
 	title: 'SGMI | Global Education',
@@ -43,13 +45,9 @@ export default function RootLayout({
 	return (
 		<html lang='en'>
 			<body className={`${Jakarta.variable} ${Libre.variable}`}>
-				{/* {shoutbarStats.status === 'ACTIVE' && 
-				<Shoutbar />} */}
-				{/* <Shoutbar /> */}
-				<Head />
-				<Menubar ctrls={Settings.menuCtrls} />
-				<Tail />
-				{children}
+				<App>
+					{children}
+				</App>
 			</body>
 		</html>
 	)

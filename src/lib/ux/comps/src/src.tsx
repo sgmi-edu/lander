@@ -5,6 +5,9 @@ type Src = {
 }
 
 const Src = (props: Src) => {
+
+
+
 	return (
 		<input
 			style={{
@@ -12,8 +15,9 @@ const Src = (props: Src) => {
 				backgroundRepeat: 'no-repeat, no-repeat',
 				backgroundPosition: 'left 12px center, right 12px center',
 				padding: '12px 42px 12px 46px',
+
 			}}
-			className={styles.wrapper}
+			className={styles.search}
 			placeholder={props.label}
 		/>
 	)

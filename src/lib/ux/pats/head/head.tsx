@@ -28,6 +28,7 @@ const Head = () => {
 		</Link>
 	)
 
+
 	const ctrls = (
 		<div className={styles.ctrls}>
 			<Comp.Src label='Search' />
