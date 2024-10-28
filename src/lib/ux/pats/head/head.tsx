@@ -7,9 +7,10 @@ const Head = () => {
 	const colliders = (
 		<div className={styles.colliders}>
 			<Image
-				width={24}
-				height={22}
-				src='/assets/icons/burger.svg'
+				style={{ cursor: 'pointer' }}
+				width={36}
+				height={36}
+				src='/assets/icons/apps.svg'
 				alt='hamburger'
 			/>
 			{/* <b>We are Expanding. Excited to announce the Sarvaloka Manchester.</b> */}
@@ -35,6 +36,7 @@ const Head = () => {
 			<Comp.Btn var={'PRIMARY'} lbl={'Become Student'} ext ldls={false} />
 			<Link href={'/auth'} className={styles.access}>
 				<Image
+					style={{ cursor: 'pointer' }}
 					width={24}
 					height={32}
 					src='/assets/icons/access.svg'
@@ -44,6 +46,8 @@ const Head = () => {
 			</Link>
 		</div>
 	)
+
+
 
 	return (
 		<div className={styles.wrapper}>

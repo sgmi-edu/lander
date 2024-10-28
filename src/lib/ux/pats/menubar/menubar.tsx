@@ -11,6 +11,16 @@ import { useRouter } from 'next/navigation'
 
 type Menubar = {
 	ctrls: {
+		mob_menu: {
+			label: string
+			src: string
+			items: {
+				id?: string
+				title: string
+				brief: string
+				criteria?: string
+			}[]
+		}[]
 		left: {
 			label: string
 			src: string
@@ -36,6 +46,66 @@ const Menubar = (props: Menubar) => {
 	const [loading] = useState<boolean>(false)
 
 	const router = useRouter()
+
+	const menu_mob = (
+		<ul className={styles.itemWrapper}>
+			{props.ctrls.mob_menu.map(
+				(
+					ctrl: {
+						items: {
+							title: string
+							brief: string
+						}[]
+						label: string
+						src: string
+					},
+					i: number
+				) => {
+					return (
+						<div key={i} className={styles.dropdown}>
+							<span className={styles.icon}>
+								<Link href={ctrl.src} key={i}>
+									{ctrl.label}
+								</Link>
+								<Image
+									width={24}
+									height={24}
+									src='/assets/icons/chevron-down.svg'
+									alt='hamburger'
+								/>
+							</span>
+							<div className={styles.content}>
+								{ctrl.items.map(
+									(
+										c: {
+											title: string
+											id?: string
+											criteria?: string
+											brief: string
+										},
+										i: number
+									) => {
+										return (
+											<div
+												style={{ borderRadius: 6, cursor: 'pointer' }}
+												onClick={() => {
+													router.push(`/${c.criteria}/${c.id}`)
+												}}
+												className={styles.card}
+												key={i}>
+												<h2>{c.title}</h2>
+												<p style={{ textAlign: 'justify' }}>{c.brief}</p>
+											</div>
+										)
+									}
+								)}
+							</div>
+						</div>
+					)
+				}
+			)}
+		</ul>
+	)
 
 	const menuItems_Left = (
 		<ul className={styles.itemWrapper}>
@@ -130,6 +200,11 @@ const Menubar = (props: Menubar) => {
 			<div className={styles.wrapper}>
 				{menuItems_Left}
 				{menuItems_Right}
+				<Image style={{ cursor: 'pointer' }} height={18} width={18} src={'/assets/icons/burger.svg'} alt={'alt'} />
+			</div>
+			<div className={styles.mobwrap}>
+				{menu_mob}
+				<Image style={{ cursor: 'pointer' }} height={18} width={18} src={'/assets/icons/burger.svg'} alt={'alt'} />
 			</div>
 			{loading && (
 				<BarLoader

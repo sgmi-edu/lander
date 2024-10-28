@@ -7,19 +7,22 @@
 	padding-left: 24px;
 	padding-right: 24px;
 	padding-bottom: 8px;
+	background-color: white;
 }
 
 .colliders {
 	display: grid;
-	grid-auto-flow: column;
-	grid-gap: 32px;
+	grid-auto-flow: row;
 	align-items: center;
+	justify-content: center;
+	justify-items: center;
 }
 
 .brand {
 	/* background-color: blue; */
 	cursor: pointer;
 	justify-self: center;
+	margin-bottom: -1px;
 }
 
 .ctrls {

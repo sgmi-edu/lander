@@ -15,19 +15,20 @@ const Programme = () => {
 	}>()
 
 	useEffect(() => {
-		fetch('https://api.jsonbin.io/v3/qs/671d6eadacd3cb34a89d8632').then(
+		fetch('https://api.npoint.io/7376a7e32bdc5e1c811d').then(
 			(data) => {
 				data.json().then((res) => {
-					const s = res.record.filter(
+					const s = res?.filter(
 						(r: { id: string; name: string; brief: string }) => {
 							return r.id === params.id
 						}
 					)
-					setData(s[0])
+					if (s[0]) setData(s[0])
 				})
+
 			}
 		)
-	}, [])
+	})
 
 	const content = (
 		<Fragment>

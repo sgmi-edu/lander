@@ -7,6 +7,62 @@
 		"brief": "SGMI Garages is a go to place for securing your future with job readiness in technology field. With our curated programmes equip yourself to attain skills that will speak for rest of your life"
 	},
 	"menuCtrls": {
+		"mob_menu": [
+			{
+				"label": "Foundation",
+				"src": "/foundation",
+				"items": [
+					{
+						"id": "FDTA1",
+						"criteria": "foundation",
+						"title": "Vision",
+						"brief": "The demand for UI UX Designers is increasing day by day. UI UX Job is ranked 6th on Glassdoor’s “Top 25 highest-paying entry-level jobs”. Everything is becoming digital in this era, which means most product or service-based companies require a UI UX Designer for their needs. That's why the demand & the average salary for a UI UX Designer are increasing every year."
+					},
+					{
+						"id": "FDTB2",
+						"criteria": "foundation",
+						"title": "Mission",
+						"brief": "The demand for UI UX Designers is increasing day by day. UI UX Job is ranked 6th on Glassdoor’s “Top 25 highest-paying entry-level jobs”. Everything is becoming digital in this era, which means most product or service-based companies require a UI UX Designer for their needs. That's why the demand & the average salary for a UI UX Designer are increasing every year."
+					}
+				]
+			},
+			{
+				"label": "Divisions",
+				"src": "/divisions",
+				"items": [
+					{
+						"id": "PREPA1",
+						"criteria": "divisions",
+						"title": "Prepschools Students Academy",
+						"brief": "The demand for UI UX Designers is increasing day by day. UI UX Job is ranked 6th on Glassdoor’s “Top 25 highest-paying entry-level jobs”. Everything is becoming digital in this era, which means most product or service-based companies require a UI UX Designer for their needs. That's why the demand & the average salary for a UI UX Designer are increasing every year."
+					},
+					{
+						"id": "GRGXA1",
+						"criteria": "divisions",
+						"title": "Garages Professional Academy",
+						"brief": "The demand for UI UX Designers is increasing day by day. UI UX Job is ranked 6th on Glassdoor’s “Top 25 highest-paying entry-level jobs”. Everything is becoming digital in this era, which means most product or service-based companies require a UI UX Designer for their needs. That's why the demand & the average salary for a UI UX Designer are increasing every year."
+					}
+				]
+			},
+			{
+				"label": "Programmes",
+				"src": "/programmes",
+				"items": [
+					{
+						"id": "UXDC45",
+						"criteria": "programmes",
+						"title": "UX Designer Basic Course",
+						"brief": "The demand for UI UX Designers is increasing day by day. UI UX Job is ranked 6th on Glassdoor’s “Top 25 highest-paying entry-level jobs”. Everything is becoming digital in this era, which means most product or service-based companies require a UI UX Designer for their needs. That's why the demand & the average salary for a UI UX Designer are increasing every year."
+					},
+					{
+						"id": "FCC89",
+						"criteria": "programmes",
+						"title": "Frontend Course",
+						"brief": "The demand for UI UX Designers is increasing day by day. UI UX Job is ranked 6th on Glassdoor’s “Top 25 highest-paying entry-level jobs”. Everything is becoming digital in this era, which means most product or service-based companies require a UI UX Designer for their needs. That's why the demand & the average salary for a UI UX Designer are increasing every year."
+					}
+				]
+			}
+		],
 		"left": [
 			{
 				"label": "Foundation & History",
@@ -78,7 +134,6 @@
 					}
 				]
 			},
-
 			{
 				"label": "Accreditions & Recognitions",
 				"src": "/home",

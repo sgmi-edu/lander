@@ -1,0 +1,11 @@
+.quicks {
+    display: grid;
+    grid-auto-flow: column;
+    background-color: white;
+    padding: 12px;
+    justify-content: space-between;
+    border-bottom: 1.6px solid #ebebeb;
+    align-items: center;
+}
+
+.quicks a {}
