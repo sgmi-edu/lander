@@ -3,10 +3,30 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Comp from '@/lib/ux/comps'
 
-const Head = () => {
-	const colliders = (
+
+type Head = {
+	setIsSidebarActive: (f: boolean) => void,
+	isSideBarActive?: boolean,
+	setBackdropOn: (f: boolean) => void,
+	backdropOn?: boolean,
+	setLeft: (f: boolean) => void
+}
+
+const Head = (props: Head) => {
+
+	const { setIsSidebarActive, isSideBarActive, setBackdropOn, backdropOn, setLeft } = props
+
+	const appHandler = () => {
+		setLeft(true)
+		setBackdropOn(!backdropOn)
+		setIsSidebarActive(!isSideBarActive)
+	}
+
+	const appSwitch = (
 		<div className={styles.colliders}>
 			<Image
+
+				onClick={appHandler}
 				style={{ cursor: 'pointer' }}
 				width={36}
 				height={36}
@@ -51,7 +71,7 @@ const Head = () => {
 
 	return (
 		<div className={styles.wrapper}>
-			{colliders}
+			{appSwitch}
 			{brand}
 			{ctrls}
 		</div>

@@ -4,4 +4,6 @@ import Shoutbar from './shoutbar/shoutbar'
 import Menubar from './menubar/menubar'
 import Form from './form/form'
 
-export { Head, Tail, Shoutbar, Menubar, Form }
+import Sidebar from './sidebar/sidebar'
+
+export { Head, Tail, Shoutbar, Menubar, Form, Sidebar }

@@ -1,0 +1,24 @@
+.sidebar {
+    background-color: rgb(255, 255, 255);
+    z-index: 200;
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 80vw;
+    padding: 32px;
+    overflow: none;
+    height: auto;
+    max-height: 100vh;
+}
+
+.head {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head>h2 {
+    letter-spacing: 6px;
+}

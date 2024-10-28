@@ -10,6 +10,11 @@ import { Fragment, useState } from 'react'
 import { useRouter } from 'next/navigation'
 
 type Menubar = {
+	setLeft: (f: boolean) => void
+	setIsSidebarActive: (f: boolean) => void,
+	isSideBarActive?: boolean,
+	setBackdropOn: (f: boolean) => void,
+	backdropOn?: boolean,
 	ctrls: {
 		mob_menu: {
 			label: string
@@ -195,16 +200,24 @@ const Menubar = (props: Menubar) => {
 			)}
 		</ul>
 	)
+
+	const menuHandler = () => {
+		props.setLeft(false)
+
+		props.setBackdropOn(!props.backdropOn)
+		props.setIsSidebarActive(!props.isSideBarActive)
+	}
+
 	return (
 		<Fragment>
 			<div className={styles.wrapper}>
 				{menuItems_Left}
 				{menuItems_Right}
-				<Image style={{ cursor: 'pointer' }} height={18} width={18} src={'/assets/icons/burger.svg'} alt={'alt'} />
+				<Image onClick={() => { menuHandler() }} style={{ cursor: 'pointer' }} height={18} width={18} src={'/assets/icons/burger.svg'} alt={'alt'} />
 			</div>
 			<div className={styles.mobwrap}>
 				{menu_mob}
-				<Image style={{ cursor: 'pointer' }} height={18} width={18} src={'/assets/icons/burger.svg'} alt={'alt'} />
+				<Image onClick={() => menuHandler()} style={{ cursor: 'pointer' }} height={18} width={18} src={'/assets/icons/burger.svg'} alt={'alt'} />
 			</div>
 			{loading && (
 				<BarLoader
